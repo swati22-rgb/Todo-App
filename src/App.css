@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+}
+
+/* Centering */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;         
+}
+
+/* Card */
+.container {
+  width: 450px;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  flex: 1;
+  padding: 10px;
+  background: #334155;
+  border-radius: 10px;
+}
+
+.filters .active {
+  background: #3b82f6;
+}
+
+/* Input section */
+.inputBox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #2563eb;
+}
+
+/* List */
+.list {
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Todo item */
+li {
+  list-style: none;
+  background: #334155;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Text */
+li span {
+  flex: 1;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Completed */
+.completed span {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  background: #475569;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.actions button:hover {
+  background: #64748b;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 15px;
+}
