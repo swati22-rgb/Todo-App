@@ -1,0 +1,96 @@
+/* BACKGROUND */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fddb92, #d1fdff);
+}
+
+/* SINGLE CARD */
+.auth-card {
+  display: flex;
+  width: 750px;
+  max-width: 95%;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* LEFT CURVED SIDE */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #ff6a88, #ff8e53);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* 🔥 THIS CREATES CURVE */
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+
+  text-align: center;
+  padding: 20px;
+}
+
+/* RIGHT SIDE */
+.right-panel {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-panel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.right-panel input {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* BUTTON */
+.auth-btn {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff6a88, #ff8e53);
+  color: white;
+  cursor: pointer;
+}
+
+/* SWITCH BUTTON */
+.left-panel button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 700px) {
+  .auth-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel {
+    border-radius: 20px 20px 0 0;
+  }
+}
